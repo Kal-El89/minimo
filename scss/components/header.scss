@@ -1,0 +1,28 @@
+.header{
+    background-color:$defaultBackgroundColor;
+    padding: 55px 0px;
+    .header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+.main-logo-wrapper{
+    width: 338px;
+}
+.navigation-ul{
+    list-style-type: none;
+    .navigation-li{
+        display: inline-block;
+.navigation-a{
+    font-size: 14px;
+    text-decoration: none;
+    color: $defaultMenuTextColor;
+    cursor: pointer;
+    padding: 0px 60px;
+}
+a:hover{
+    color: red;
+}
+}
+}
+}
+}
