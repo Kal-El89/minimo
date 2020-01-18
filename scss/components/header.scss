@@ -6,10 +6,17 @@
             align-items: center;
             justify-content: space-between;
             .logo-wrapper{
-                padding-right: 125px;
+                // padding-right: 125px;
+                width: 250px;
 
-                .main-logo-wrapper{
+                .logo-wrapper-a{
                     width: 250px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: $InconsolataRegular;
+                    font-size: 30px;
+                    color: #000000;
+
                 }
             }   
         .navigation-ul{
@@ -23,9 +30,9 @@
                 cursor: pointer;
                     padding: 0px 30px;
                 }
-            a:hover{
-                color: red;
-            }
+                a:hover{
+                    color: red;
+                }
             a:last-child{
                 padding-right: 0px;
             }

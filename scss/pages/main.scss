@@ -6,16 +6,22 @@
     height: 97px;
     background-color:$defaultBackgroundColor;
     .footer-wrapper{
+        padding-top: 35px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .footer-wrapper-left{
             display: flex;
+            padding-bottom: 0 7.5px;
+            font-family: $PlayfairDisplayRegular;
             .footer-left-1{
                 font-size: 14px;
             }
             .footer-left-2{
                 font-size: 14px;
+                padding-left: 15px;
+                font-family: $PlayfairDisplayRegular;
+
             }
 
         }
@@ -23,15 +29,34 @@
             display: flex;
             .footer-right-1{
                 font-size: 14px;
+                padding-right: 15px;
+                font-family: $PlayfairDisplayRegular;
             }
             .fb{
                 font-size: 20px;
+                padding-right: 15px;
+                padding-top: 7.5px;
+                color: #3b5998;
+                &:hover{
+                    color: $defaultMenuTextColor;
+                }
             }
             .twitter{
                 font-size: 20px;
+                padding-right: 15px;
+                padding-top: 7.5px;
+                color: #38A1F3;
+                &:hover{
+                    color: $defaultMenuTextColor;
+                }
             }
             .insta{
                 font-size: 20px;
+                padding-top: 7.5px;
+                color: #8a3ab9;
+                &:hover{
+                    color: $defaultMenuTextColor;
+                }
             }
 
         }
@@ -44,6 +69,7 @@
 .section-1{
     .news-wrapper{
         .main-photo-wrapper{
+            padding-top: 30px;
 
         }
         .photodiary{
@@ -141,4 +167,39 @@ input[type=text]{
     border-left: none;
     border-right: none;
     padding-top: 30px;
+}
+
+.section-3{
+    .news-wrapper-3{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+        .photo-wrapper{
+            //    width: 420px;
+               height: 280px;
+    
+           }
+           .photodiary{
+            font-family: $ubuntuLight;
+            color: $defaultMenuTextColor;
+            font-size: 14px;
+            padding-top: 15px;
+           }
+           .photo-title{
+            color: $defaultMenuTextColor;
+            font-family: $PlayfairDisplayRegular;
+            font-size: 20px;
+    
+           } 
+           .main-news{
+               width: 420px;
+               color: $defaultMenuTextColor;
+                font-family: $PlayfairDisplayRegular;
+                font-size: 14px;
+    
+           }
+    }
 }
