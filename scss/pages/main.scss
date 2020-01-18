@@ -203,3 +203,25 @@ input[type=text]{
            }
     }
 }
+
+.html{
+    scroll-behavior: smooth;
+}
+.html::-webkit-scrollbar{
+    width: 5px;
+
+}
+html::-webkit-scrollbar-thumb{
+    background-color: $defaultFooterTextColor;
+    border-radius: 40px;
+}
+.gotopbth{
+    scroll-behavior: smooth;
+  position: fixed;
+    bottom: 40px;
+    right: 2px;
+  .scrollupp{
+    width: 50px;
+    height: 50px;
+  }
+}
