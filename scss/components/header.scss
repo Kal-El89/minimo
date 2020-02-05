@@ -1,10 +1,12 @@
 .header{
     background-color:$defaultBackgroundColor;
     padding: 25px 0px;
+    position: relative;
         .header-wrapper{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
             .logo-wrapper{
                 // padding-right: 125px;
                 width: 250px;
@@ -39,4 +41,86 @@
             }   
         }
     }
+}
+.burger-menu{
+    width: 50px;
+    height: 50px;
+    background-color: $defaultWhiteColor;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 4;
+    position: relative;
+
+
+    .burger-menu-span,
+    .burger-menu-span::before,
+    .burger-menu-span::after{
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $defaultMenuTextColor;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -15px;
+    }
+    .burger-menu-span::before,
+    .burger-menu-span::after{
+        content: "";
+        transition: all .2s linear;
+        display: block;
+    }
+    .burger-menu-span::before{
+        transform: translateY(-7px);
+    }
+    .burger-menu-span::after{
+        transform: translateY(7px);
+    }
+}
+.active .burger-menu-span::before{
+    transform: rotate(45deg);
+}
+.active .burger-menu-span::after{
+    transform: rotate(-45deg);
+}
+.active .burger-menu-span{
+    height: 0px;
+}
+
+.nav a{
+    background-color: $defaultWhiteColor;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+    color: $defaultMenuTextColor;
+    left: calc(50% - 15px);  
+    top: calc(50% - 15px);
+    position: absolute;
+    z-index: 0;
+}
+  .active a:nth-child(1){
+    transform: translate(-110%, 100%);
+  }
+  .active a:nth-child(2){
+    transform: translate(-110%,-100%);
+  }
+  .active a:nth-child(3){
+    transform: translate(-150%, 0%);
+  }
+  .nav a:nth-child(1){
+    transition-delay: 0.3s;
+  }
+  .nav a:nth-child(2){
+    transition-delay: 0.1s;
+  }
+  .nav a:nth-child(3){
+      transition-delay: 0.2s;
+  }
+
+.hamburger{
+    position: relative;
 }

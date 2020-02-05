@@ -19,3 +19,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: $InconsolataRegular;
+    src: url($fontsUrl + 'Inconsolata-Regular.eot');
+    src: url($fontsUrl + 'Inconsolata-Regular.eot?#iefix') format('embedded-opentype'),
+        url($fontsUrl + 'Inconsolata-Regular.woff2') format('woff2'),
+        url($fontsUrl + 'Inconsolata-Regular.woff') format('woff'),
+        url($fontsUrl + 'Inconsolata-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
